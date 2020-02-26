@@ -1,6 +1,8 @@
 # RecyclerViewDemo
 
-This is a minimal demo of how to use an Android [RecyclerView](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html).
+This sample demonstrates how to use an Android [`RecyclerView`](https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html).
+
+It includes an implementation of an [`AutoCompleteTextView`](https://developer.android.com/reference/android/widget/AutoCompleteTextView) that forces the drop-down to drop **down** (rather than up).
 
 ## Layout
 
@@ -13,7 +15,7 @@ This is a minimal demo of how to use an Android [RecyclerView](https://developer
 
 ## Code
 
-````java
+```java
 public class MainActivity extends AppCompatActivity {
 
     private static final String[] ITEMS = { "One", "Two", "Three", "Four", "Five" };
@@ -53,4 +55,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-````
+```

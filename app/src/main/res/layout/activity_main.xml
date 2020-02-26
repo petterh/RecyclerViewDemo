@@ -40,6 +40,21 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:padding="@dimen/padding"/>
+
+    <com.contoso.recyclerviewdemo.DownOnlyAutoCompleteTextView
+        android:id="@+id/auto_complete_text_view"
+        android:layout_margin="12dp"
+        android:hint="AutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:background="#ff0"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
