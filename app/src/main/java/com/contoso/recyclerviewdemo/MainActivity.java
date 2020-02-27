@@ -76,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
                 return new MyViewHolder(textView);
             }
 
+            /**
+             * The default background color is white. We nevertheless need to set the background to
+             * white for even indices, as we might be reusing a view that was previously odd-numbered.
+             * This applies to all properties that we change according to position -- it's not enough
+             * to set something (e.g., color, bold text); we must also be prepared to reset.
+             */
             @Override
             public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
                 MyViewHolder viewHolder = (MyViewHolder) holder;
